@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Reconciliation_Result (ReconciliationDB)' inline='true' name='federated.03dwktn0z27tuy197xue70sbhubj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='LAPTOP-B5QTVOHS\SQLEXPRESS' name='sqlserver.029u6k9104rmyp1ccsuql13d9ubg'>
+            <connection application-intent='false' authentication='sspi' class='sqlserver' dbname='ReconciliationDB' minimum-driver-version='SQL Server Native Client 10.0' multi-subnet-failover='false' odbc-native-protocol='yes' one-time-sql='' server='LAPTOP-B5QTVOHS\SQLEXPRESS' />
+          </named-connection>
+        </named-connections>
+        <relation connection='sqlserver.029u6k9104rmyp1ccsuql13d9ubg' name='Reconciliation_Result' table='[dbo].[Reconciliation_Result]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Transaction_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction_ID]</local-name>
+            <parent-name>[Reconciliation_Result]</parent-name>
+            <remote-alias>Transaction_ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Transaction_Date]</local-name>
+            <parent-name>[Reconciliation_Result]</parent-name>
+            <remote-alias>Transaction_Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <object-id>[Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ERP_Amount</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ERP_Amount]</local-name>
+            <parent-name>[Reconciliation_Result]</parent-name>
+            <remote-alias>ERP_Amount</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank_Txn_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bank_Txn_ID]</local-name>
+            <parent-name>[Reconciliation_Result]</parent-name>
+            <remote-alias>Bank_Txn_ID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank_Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Bank_Date]</local-name>
+            <parent-name>[Reconciliation_Result]</parent-name>
+            <remote-alias>Bank_Date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <object-id>[Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank_Amount</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[Bank_Amount]</local-name>
+            <parent-name>[Reconciliation_Result]</parent-name>
+            <remote-alias>Bank_Amount</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reference_No</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Reference_No]</local-name>
+            <parent-name>[Reconciliation_Result]</parent-name>
+            <remote-alias>Reference_No</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[Reconciliation_Result]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>9</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Bank Amount' datatype='real' name='[Bank_Amount]' role='measure' type='quantitative' />
+      <column caption='Bank Date' datatype='date' name='[Bank_Date]' role='dimension' type='ordinal' />
+      <column caption='Bank Txn ID' datatype='string' name='[Bank_Txn_ID]' role='dimension' type='nominal' />
+      <column caption='ERP Amount' datatype='real' name='[ERP_Amount]' role='measure' type='quantitative' />
+      <column caption='Reference No' datatype='string' name='[Reference_No]' role='dimension' type='nominal' />
+      <column caption='Transaction Date' datatype='date' name='[Transaction_Date]' role='dimension' type='ordinal' />
+      <column caption='Transaction ID' datatype='string' name='[Transaction_ID]' role='dimension' type='nominal' />
+      <column caption='Reconciliation_Result' datatype='table' name='[__tableau_internal_object_id__].[Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Reconciliation_Result' id='Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583'>
+            <properties context=''>
+              <relation connection='sqlserver.029u6k9104rmyp1ccsuql13d9ubg' name='Reconciliation_Result' table='[dbo].[Reconciliation_Result]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Reconciliation_Result (ReconciliationDB)' name='federated.03dwktn0z27tuy197xue70sbhubj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03dwktn0z27tuy197xue70sbhubj'>
+            <column caption='Bank Date' datatype='date' name='[Bank_Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column caption='Reconciliation_Result' datatype='table' name='[__tableau_internal_object_id__].[Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Bank_Date]' derivation='Year' name='[yr:Bank_Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.03dwktn0z27tuy197xue70sbhubj].[yr:Bank_Date:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.03dwktn0z27tuy197xue70sbhubj].[__tableau_internal_object_id__].[cnt:Reconciliation_Result_B00CE341D1AE47B8875E0DCF598FE583:qk]</rows>
+        <cols>[federated.03dwktn0z27tuy197xue70sbhubj].[none:Status:nk]</cols>
+      </table>
+      <simple-id uuid='{1F82BCA0-B149-4B02-B41C-E3163245A89A}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='100'>
+            <card type='columns' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03dwktn0z27tuy197xue70sbhubj].[yr:Bank_Date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.03dwktn0z27tuy197xue70sbhubj].[yr:Bank_Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4ECFBBA9-12E6-489A-9D8F-614FB3596F3C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='174'>
+      iVBORw0KGgoAAAANSUhEUgAAAK4AAADACAYAAACd8ljEAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAHx0lEQVR4nO3cf2zUdx3H8ddW2tlr6Yq5ufJz60QERzZiGxBk/OwcOCkGsJWJgQRJJlCQ
+      jJEgoaQRnUMGY8yJYys0pE4QgohjaATG0G3lxwJsqMxaZfxoBwfUjjvxeg3+UQYdgZax0uur
+      ez7+49vv+3sf7p755nPfUG65cOHCBQFmbo33AoAbQbiwRLiwRLiwRLiwRLiwRLiwRLiwRLiw
+      RLiwRLiwRLiw1C7eC0BMlW+UatWaV/TmsYgU6KL7hozUhLyR6vnZ+o8nFjmr6kiC0oJpSvo4
+      V77BOQfcceMqpoqSyRpT8IJ2q7v69eunft2ld0qLNGHZ65fOOv6b6Rox4im9+TGvfqNzDrjj
+      xtVula44pOB3i7V+5n2XP4xYRH+rOBXPhbV63HHjKqZYrRRon/rRO0i7gHr1uEvSca2fmaup
+      qyskbdfC3Fzl5uYqd2lZ/XknX9PSqeM0tH+2srOzld1/qMYVblFlTI3PlS1Vbu5MrT/e4DWv
+      PFZzUCWzv6kHsuuv3X/oOE1duU/hm/yOXC/uuHGVpQHDEvXyc9/X5P9M16xvD1fPjoEGH0q6
+      ssbPUKz9Mi3emqFRM/LVS5IyMut/XF6mt4KjNG/lcPXJkKq2P6PHFhVq/r1ZmtfY3P+qdeJE
+      SOFYg6VccWzfL3+g5W9na8GvX1D/9POq2r9N614rV0hZSrn5b0yTCDeuUvTQwhJV/3COni0t
+      0qTSIiV36asx0+Zq2oNdlaQUZX4lR7ceXiVt7aT7c3I0qOH4gMe1ZsDlPwbzFmhm2XYV/vWw
+      MvMbmWtSWO9X1Ug9H9Dg7kGlSQrmTFTvnOb4OzcPwo23pB7KX/xbjY1U6u/bNmn1r0pVOjdP
+      +0+U6sWJ9zTxAUV1dNdLWr9pp3a8G5IknT8radgnXVSKsgb1V/KPivTw1zaq38jBGvHgSA3q
+      /blW83SCPW4r0S7QUb1HParFL72sRQ8l69CKUu1uYuZI6RTlzfm9zvWdqiXFxSouLlbBV5tn
+      PXeOXq5tG1eoYEwnRf6yWvMnfV3DJ6/Vkea5/CdGuPEUPqMz0SsPpunuz98h1cYUu9rMJUf0
+      6pZD6jblSc3Py1b3YFDBYFC339Z8y0vqmq28RxfqufU7tHPlI0o/8Du92krKJdx4Cm1WwfDx
+      KizZrL3lIYVCIZXvelo/XvVPJQ4boKyLp3XO7K5E7dKmjeUKhUI6drJGUqpS06T39pTpaFRS
+      9KT2ri3UL7ZfvvzV5ySlpCpNlTr4VvnF1yxRYcNBHdHawie0+Z1KRWKSFNX7/z6usNKUmtoS
+      b0zTbuHX0+MoVqntP5unn245qDP//fBgsroMma5FP8lXjw83lLEKbZg9Q4v/XKVaSXp4ifYW
+      DVL49SeU/9gGVdXWz31hbJFyz83RU+3qf36tOcUqVDL5O1p+qLb+FbsM0feG1mr5mpAKNpRq
+      4l1h7VteoLnrGqwrMUMDZz+jxWOb2ne3DMJtFWKKnK1WpE5KSgsq7RrfgKI1IdVEExRI76BA
+      u0sHFaqJKiGQrg6Bqyd11TlFVROqUTQhoPQOgWvEePEcXTkbf4QLS+xxYYlwYakV7VqaTyQS
+      uerxurq6Fl4JbpZPzR43EokoEAjEexloJmwVYIlwYYlwYYlwYcnqqULt2QqV7XxFu8qOqUaS
+      brtDfXK+pW8M7Noq/nEzWo7RU4Uq/ennGxQeOFrDvthR7T+ToNrwMZWVPK2tGdNUNCZTCY1M
+      81ShbTEK9xrOv6FnF1VrXOFIZTRyGuG2LfZ73LrKSlUFkpUc74WgRVntcT+i7rxOv7tDa9a9
+      p5wpo3V7vNeDFmW3VTi1Y5mW/PGozp35QIEvP6IZEwar83V8M2Or0LbYhVuvTuc/OK0TB3Zo
+      wx/+oW7jZyn/S43XS7hti2m4DYT36fkF+9X3ycnq08hjBcJtW+y/nCmls7qmHVcl/2PRp4pP
+      uKfe1s4DJ+t/d6qB2qNl2hO9X/c29iwMbY7PU4X2qbqw53k9vqpayXdmqmenJJ3+12GdqO2l
+      sbMmqVu814cWZbjHrVW4Olx/501MUXpK4nVNscdtW3zuuJckKiU9Pd6LQJz57HGBBggXlggX
+      lggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggX
+      lggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggX
+      lggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggX
+      lggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggX
+      lggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggX
+      lggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggX
+      lggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggX
+      lggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlggXlv4PUyg2
+      mcSdq0AAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
